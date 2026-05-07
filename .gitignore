@@ -1,0 +1,28 @@
+# Java
+target/
+*.class
+*.jar
+
+# Node
+node_modules/
+dist/
+build/
+coverage/
+test-results/
+playwright-report/
+*.tsbuildinfo
+*.log
+
+# Environment and local config
+.env
+.env.*
+!.env.example
+
+# Editors and OS
+.idea/
+.vscode/*
+!.vscode/settings.json
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
