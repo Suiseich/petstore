@@ -5,10 +5,18 @@ services:
     plan: free
     rootDir: backend
     envVars:
-      - key: DATABASE_URL
+      - key: DATABASE_HOST
         fromDatabase:
           name: petstore-db
-          property: connectionString
+          property: host
+      - key: DATABASE_PORT
+        fromDatabase:
+          name: petstore-db
+          property: port
+      - key: DATABASE_NAME
+        fromDatabase:
+          name: petstore-db
+          property: database
       - key: DATABASE_USERNAME
         fromDatabase:
           name: petstore-db
@@ -34,4 +42,3 @@ services:
 databases:
   - name: petstore-db
     plan: free
-
