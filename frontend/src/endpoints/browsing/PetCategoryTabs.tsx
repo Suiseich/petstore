@@ -20,6 +20,16 @@ export default function PetCategoryTabs({ categories, selectedCategory, onChange
       }}
       aria-label="Pet category"
       className="flex flex-wrap gap-2"
+      sx={{
+        '& .MuiToggleButtonGroup-grouped': {
+          border: '1px solid',
+          borderColor: 'divider',
+          borderRadius: '8px !important',
+          margin: 0,
+          minWidth: 84,
+          textTransform: 'none'
+        }
+      }}
     >
       <ToggleButton value="ALL" aria-label="All pets">
         All
@@ -32,4 +42,3 @@ export default function PetCategoryTabs({ categories, selectedCategory, onChange
     </ToggleButtonGroup>
   );
 }
-
